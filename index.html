@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="search.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Movie Database Searcher</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-xs-12 col-md-6" id="rightColumn">
+        <input type="search" class="form-control" id="searchField" onkeyup="search()" placeholder="Search for a movie..."></input>
+          <div class="panel panel-default" id="searchResultsBox"></div>
+          <div class="panel panel-default" id="overviewBox"></div>
+      </div> <!-- right column -->
+            <div class=" col-xs-12 col-md-6" id="leftColumn">
+        <div class = "description">
+            <p>
+              There are thousands of movies available today. This project searches a movie database for an overview of a movie specified by the user and outputs the result accordingly.
+            </p>
+            <p>
+              REST API created by themoviedb.org is used to retrieve the movie overview. The JSON formatted information is retrieved via the cURL library in PHP. A combination of Javascript and AJAX
+              was used to develop the movie search and result fields. This allows for quick search results as no page reloading is needed. Bootstrap was used to easily create a column style
+              layout in addition to creating the search and overview fields.
+            </p>
+        </div>
+        <div class="download"><a href="https://github.com/benellis105/movie">Download Source</a></div>
+      </div> <!-- left column -->
+    </div> <!-- container -->
+  </body>
+</html>
